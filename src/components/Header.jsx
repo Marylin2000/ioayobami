@@ -31,17 +31,17 @@ function Header() {
   }, []);
 
   return (
-    <div className="sticky top-0 z-20 shadow-lg">
+    <div className="sticky top-0 z-20 shadow-lg w-full">
       <div
-        className={`flex justify-between px-10 ${
+        className={`flex justify-between items-center px-6 md:px-10 ${
           isScrolling ? "bg-white transition-all duration-150" : ""
-        } bg-[#353daf] h-[10vh] items-center`}
+        } bg-[#353daf] h-[10vh]`}
       >
         <a
           href="/"
           className={`${
             isScrolling ? "text-[#353daf]" : "text-white"
-          } font-bold text-2xl`}
+          } font-bold text-2xl whitespace-nowrap overflow-hidden max-w-[80%]`}
         >
           I.O.AYOBAMI
         </a>
@@ -79,7 +79,7 @@ function Header() {
 
       {/* Sidebar */}
       <div
-        className={`fixed left-0 top-0 h-full w-3/4 bg-white shadow-lg z-20 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed left-0 top-0 h-full w-3/4 max-w-sm bg-white shadow-lg z-20 transform transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

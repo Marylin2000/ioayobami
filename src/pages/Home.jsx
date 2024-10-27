@@ -153,7 +153,7 @@ const Home = () => {
 </div>
 
 
-      <div className="grid md:grid-cols-3 mx-3 gap-5 lg:grid-cols-4 p-4">
+      <div className="grid md:grid-cols-3 mx-3 gap-5 lg:grid-cols-4 p-4" id="portfolio2">
         {portfolioItems.map((item, index) => (
           <PortfolioCard key={index} portfolio={item} />
         ))}
@@ -165,7 +165,7 @@ const Home = () => {
         ))}
       </div>
 
-      <Contact />
+      <Contact  />
       <Footer />
     </main>
   );

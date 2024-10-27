@@ -7,7 +7,7 @@ function Contact() {
   const [subjects, setSubject] = useState("");
 
   return (
-    <div className="bg-[#353daf] w-full my-2 py-16 h-auto md:h-[60vh]">
+    <div className="bg-[#353daf] w-full my-2 py-16 h-auto " id="contact">
       <form className="grid md:grid-cols-2 gap-10 px-8">
         {/* Image section */}
         <div className="w-full h-full">
