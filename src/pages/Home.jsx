@@ -101,9 +101,12 @@ const Home = () => {
                 Embedded Systems
               </h3>
               <p>
-                I am an embedded systems engineer with expertise in firmware
-                development, optimizing embedded devices, and ensuring their
-                seamless operation.
+                I am an embedded systems engineer with proficiency in C, C++,
+                Python, and MATLAB. My expertise includes microcontroller and
+                microprocessor applications, discrete system design and PCB. I
+                excel in firmware development, optimizing embedded devices, and
+                ensuring their seamless operation, bridging the gap between
+                hardware and software.
               </p>
             </div>
             <div className="service-item max-w-sm p-6 m-4 shadow-lg rounded-lg bg-gray-50">
@@ -111,8 +114,12 @@ const Home = () => {
                 Renewable Energy
               </h3>
               <p>
-                I specialize in designing inverters, solar installations, and
-                harnessing sustainable energy solutions.
+                I specialize in renewable energy engineering, excelling in the
+                design of inverters, solar installation, and harnessing
+                piezoelectric and thermoelectric energy sources. My expertise
+                lies in developing sustainable energy solutions that leverage
+                these technologies, contributing to a cleaner and more efficient
+                energy landscape.
               </p>
             </div>
           </div>
@@ -135,9 +142,14 @@ const Home = () => {
                   Instructor - Nascomsoft Embedded Hub, Bauchi
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Instructed students in MATLAB simulation, embedded systems,
-                  inverter construction, and solar installation. Guided hands-on
-                  projects to reinforce practical skills.
+                  Ismail is an instructor at Nascomsoft Embedded Hub, guiding
+                  students in MATLAB simulation, C and C++ programming, embedded
+                  systems, inverter construction, and solar system installation.
+                  His focus is on building a solid understanding of programming
+                  fundamentals, system components, and practical hands-on
+                  skills. Through comprehensive instruction, he empowers
+                  students to work effectively with microcontrollers, design
+                  systems, and implement renewable energy solutions.
                 </p>
               </div>
             </div>
@@ -150,9 +162,21 @@ const Home = () => {
                   Engineering Projects - Nascomsoft Embedded Hub
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Worked on engineering projects, including VLC systems,
-                  accident detection, renewable energy solutions, and control
-                  system modeling, driving innovation in embedded technology.
+                  Ismail has worked on numerous engineering projects, including
+                  a tomato sorting machine, visible light communication (VLC)
+                  system, electricity meter with SMS alerts, mobility aids for
+                  the visually impaired, and accident detection systems. He has
+                  contributed to creating a hydroponic system, thermoelectric
+                  energy generation, and an incubator with 95% hatching
+                  efficiency. Additionally, he has implemented solar power
+                  systems, car trackers, and display systems using P10 boards.
+                  These projects highlight his expertise in embedded systems,
+                  renewable energy, and automation, addressing various
+                  industrial and societal challenges. Ismail's engineering
+                  projects also include MATLAB-based work, such as the economic
+                  load dispatcher and the modeling and simulation of a stepper
+                  motor. These projects demonstrate his expertise in
+                  optimization techniques and control system analysis.
                 </p>
               </div>
             </div>
@@ -160,16 +184,17 @@ const Home = () => {
         </div>
       </div>
       <div>
-      <div className="flex items-center flex-col justify-center py-4">
-        <div className="items-center flex gap-3">
-          <div className="bg-blue-700 h-[2px] w-[40px]"></div>
-          <p className="text-blue-600 font-bold">My Portfolio</p>
-        </div>
-            <p className="text-4xl font-bold text-blue-600">My Excellent Portfoliop</p>
+        <div className="flex items-center flex-col justify-center py-4">
+          <div className="items-center flex gap-3">
+            <div className="bg-blue-700 h-[2px] w-[40px]"></div>
+            <p className="text-blue-600 font-bold">My Portfolio</p>
           </div>
+          <p className="text-4xl font-bold text-blue-600">
+            My Excellent Portfoliop
+          </p>
+        </div>
 
-          <PortfolioTabs />
-        
+        <PortfolioTabs />
       </div>
 
       <Contact />
