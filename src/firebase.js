@@ -1,21 +1,21 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getDatabase } from "firebase/database";
+import { getStorage } from "firebase/storage"; // Import Firebase Storage
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCn3MHCGBnW8l23EvEqgtQHjZp2pl9Djko",
-  authDomain: "portfolio-1f6f3.firebaseapp.com",
-  projectId: "portfolio-1f6f3",
-  storageBucket: "portfolio-1f6f3.appspot.com",
-  messagingSenderId: "295005676313",
-  appId: "1:295005676313:web:431ddc8deeab3337e61b88",
-  measurementId: "G-H5JM8932L9"
+  apiKey: "AIzaSyAR1Xo__FePB0FKTuZBnV0V-ksiM_pSLJo",
+  authDomain: "ioayobami.firebaseapp.com",
+  projectId: "ioayobami",
+  storageBucket: "ioayobami.appspot.com",
+  messagingSenderId: "669053327345",
+  appId: "1:669053327345:web:3cef6ce22808b3f7629650",
+  measurementId: "G-ES2Y33GNLJ",
+  databaseURL: "https://ioayobami-default-rtdb.firebaseio.com/"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const database = getDatabase(app);
+const storage = getStorage(app); // Initialize Firebase Storage
+
+export { database, storage }; // Export both database and storage

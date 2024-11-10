@@ -7,6 +7,8 @@ import TestimonialCard from "../components/TestimonialCard";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import aboutImage from "../assets/images/about.jpg";
+import Tabs from "../components/Tabs.jsx";
+import PortfolioTabs from "../components/Tabs.jsx";
 
 const Home = () => {
   const scrolltoTop = () => {
@@ -29,7 +31,9 @@ const Home = () => {
           </div>
           <div className="w-full md:w-1/2 p-5 text-left">
             <div className="section-header mb-4">
-              <p className="text-lg font-medium text-blue-600">Learn About Me</p>
+              <p className="text-lg font-medium text-blue-600">
+                Learn About Me
+              </p>
               <h2 className="text-2xl font-bold">4 Years Experience</h2>
             </div>
             <div className="about-text mb-6">
@@ -116,56 +120,59 @@ const Home = () => {
       </div>
 
       <div className="experience bg-gray-50 py-12" id="experience">
-  <div className="container mx-auto px-4">
-    <div className="section-header text-center mb-12">
-      <p className="text-blue-600 font-semibold">My Resume</p>
-      <h2 className="text-3xl font-bold">Working Experience</h2>
-    </div>
-    <div className="experience-list space-y-8">
-      <div className="experience-card bg-white shadow-lg rounded-lg p-6 md:flex md:items-start">
-        <div className="timeline-date mb-4 md:mb-0 md:mr-8 text-blue-600 font-semibold text-lg md:w-1/4">
-          2021 - Present
-        </div>
-        <div className="experience-details md:w-3/4">
-          <h3 className="text-xl font-bold text-gray-800 mb-2">
-            Instructor - Nascomsoft Embedded Hub, Bauchi
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            Instructed students in MATLAB simulation, embedded systems, inverter construction, and solar installation. Guided hands-on projects to reinforce practical skills.
-          </p>
+        <div className="container mx-auto px-4">
+          <div className="section-header text-center mb-12">
+            <p className="text-blue-600 font-semibold">My Resume</p>
+            <h2 className="text-3xl font-bold">Working Experience</h2>
+          </div>
+          <div className="experience-list space-y-8">
+            <div className="experience-card bg-white shadow-lg rounded-lg p-6 md:flex md:items-start">
+              <div className="timeline-date mb-4 md:mb-0 md:mr-8 text-blue-600 font-semibold text-lg md:w-1/4">
+                2021 - Present
+              </div>
+              <div className="experience-details md:w-3/4">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                  Instructor - Nascomsoft Embedded Hub, Bauchi
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Instructed students in MATLAB simulation, embedded systems,
+                  inverter construction, and solar installation. Guided hands-on
+                  projects to reinforce practical skills.
+                </p>
+              </div>
+            </div>
+            <div className="experience-card bg-white shadow-lg rounded-lg p-6 md:flex md:items-start">
+              <div className="timeline-date mb-4 md:mb-0 md:mr-8 text-blue-600 font-semibold text-lg md:w-1/4">
+                2021 - Present
+              </div>
+              <div className="experience-details md:w-3/4">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                  Engineering Projects - Nascomsoft Embedded Hub
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Worked on engineering projects, including VLC systems,
+                  accident detection, renewable energy solutions, and control
+                  system modeling, driving innovation in embedded technology.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="experience-card bg-white shadow-lg rounded-lg p-6 md:flex md:items-start">
-        <div className="timeline-date mb-4 md:mb-0 md:mr-8 text-blue-600 font-semibold text-lg md:w-1/4">
-          2021 - Present
+      <div>
+      <div className="flex items-center flex-col justify-center py-4">
+        <div className="items-center flex gap-3">
+          <div className="bg-blue-700 h-[2px] w-[40px]"></div>
+          <p className="text-blue-600 font-bold">My Portfolio</p>
         </div>
-        <div className="experience-details md:w-3/4">
-          <h3 className="text-xl font-bold text-gray-800 mb-2">
-            Engineering Projects - Nascomsoft Embedded Hub
-          </h3>
-          <p className="text-gray-700 leading-relaxed">
-            Worked on engineering projects, including VLC systems, accident detection, renewable energy solutions, and control system modeling, driving innovation in embedded technology.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <p className="text-4xl font-bold text-blue-600">My Excellent Portfoliop</p>
+          </div>
 
-
-      <div className="grid md:grid-cols-3 mx-3 gap-5 lg:grid-cols-4 p-4" id="portfolio2">
-        {portfolioItems.map((item, index) => (
-          <PortfolioCard key={index} portfolio={item} />
-        ))}
+          <PortfolioTabs />
+        
       </div>
 
-      <div className="flex flex-col md:flex-row overflow-x-scroll py-4">
-        {testimonials.map((data, index) => (
-          <TestimonialCard key={index} data={data} />
-        ))}
-      </div>
-
-      <Contact  />
+      <Contact />
       <Footer />
     </main>
   );
