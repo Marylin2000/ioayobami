@@ -5,7 +5,7 @@ import Lightbox from './LightBox';
 const categories = ["AWARDS", "EMBEDDED SYSTEM", "RENEWABLE ENERGY", "PROGRAMMING", "OTHERS"];
 
 const PortfolioTabs = () => {
-  const [activeTab, setActiveTab] = useState("PROGRAMMING");
+  const [activeTab, setActiveTab] = useState("AWARDS");
   const [lightboxImage, setLightboxImage] = useState(null);
 
   const filteredItems = portfolioItems.filter(item => item.category === activeTab);
