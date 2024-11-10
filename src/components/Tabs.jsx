@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { portfolioItems } from '../constants/images';
 import Lightbox from './LightBox';
 
-const categories = ["PROGRAMMING", "EMBEDDED SYSTEM", "RENEWABLE ENERGY", "AWARDS", "OTHERS"];
+const categories = ["AWARDS", "EMBEDDED SYSTEM", "RENEWABLE ENERGY", "PROGRAMMING", "OTHERS"];
 
 const PortfolioTabs = () => {
   const [activeTab, setActiveTab] = useState("PROGRAMMING");

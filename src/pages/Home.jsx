@@ -190,7 +190,7 @@ const Home = () => {
             <p className="text-blue-600 font-bold">My Portfolio</p>
           </div>
           <p className="text-4xl font-bold text-blue-600">
-            My Excellent Portfoliop
+            My Excellent Portfolio
           </p>
         </div>
 
