@@ -18,6 +18,9 @@
  import programming7 from "../assets/images/programming7.jpg" 
  import programming9 from "../assets/images/programming9.jpg" 
 
+ import matlab1 from "../assets/images/matlab1.jpeg";
+ import matlab2 from "../assets/images/matlab2.jpeg"
+
  import others14 from "../assets/images/others14.jpg" 
  import others16 from "../assets/images/others16.jpg"
  import embed1  from "../assets/images/embed1.jpg" 
@@ -25,7 +28,7 @@
  import embed9 from "../assets/images/embed9.jpg" 
  import embed10  from "../assets/images/embed10.jpg" 
  import embed11 from "../assets/images/embed11.jpg" 
- import embed12 from "../assets/images/embed12.jpg" 
+ import embed12 from "../assets/images/embed12.jpg"
  import embed13 from "../assets/images/embed13.jpg" 
  import embed14 from "../assets/images/embed14.jpg" 
  import embed15 from "../assets/images/embed15.jpg" 
@@ -43,33 +46,33 @@
  
 
  export const portfolioItems = [
-  // PROGRAMMING
+  // MATLAB
   {
     title: "OBSTACLE AVOIDANCE ROBOT",
     image: programming4,
     imageAlt: "Obstacle Avoidance Robot Image",
-    category: "PROGRAMMING",
+    category: "MATLAB",
     link: "",
   },
   {
     title: "SHOCK ABSORBER",
     image: programming5,
     imageAlt: "Shock Absorber Image",
-    category: "PROGRAMMING",
+    category: "MATLAB",
     link: "",
   },
   {
     title: "ACCELERATION-DISTANCE RELATIONSHIP",
     image: programming7,
     imageAlt: "Acceleration-Distance Relationship Image",
-    category: "PROGRAMMING",
+    category: "MATLAB",
     link: "",
   },
   {
     title: "BUILDING APPLICATION WITH C++",
     image: programming9,
     imageAlt: "Building Application with C++ Image",
-    category: "PROGRAMMING",
+    category: "MATLAB",
     link: "",
   },
 
@@ -225,20 +228,7 @@
     category: "AWARDS",
     link: "",
   },
-  {
-    title: "KIDS CAN CODE",
-    image: kcc,
-    imageAlt: "Kids Can Code Image",
-    category: "AWARDS",
-    link: "",
-  },
-  {
-    title: "KIDS CAN CODE",
-    image: kcc1,
-    imageAlt: "Kids Can Code 1 Image",
-    category: "AWARDS",
-    link: "",
-  },
+
 
   // OTHERS
   {
@@ -282,19 +272,5 @@
     imageAlt: "Embedded System Instructor Image",
     category: "OTHERS",
     link: "",
-  },
-  {
-    title: "KIDS CAN CODE",
-    image: others8,
-    imageAlt: "Kids Can Code Image",
-    category: "OTHERS",
-    link: "",
-  },
-  {
-    title: "KIDS CAN CODE",
-    image: others10,
-    imageAlt: "Kids Can Code Image",
-    category: "OTHERS",
-    link: "",
-  },
+  }
 ];

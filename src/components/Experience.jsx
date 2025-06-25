@@ -1,68 +1,39 @@
 import React from "react";
-
-function Experience() {
+import { experienceData as experience } from "../constants";
+const ExperienceCard = ({experience}) => {
   return (
-    <div className="experience" id="experience">
-      <div className="container">
-        <header
-          className="section-header text-center wow zoomIn"
-          data-wow-delay="0.1s"
-        >
-          <p>My Resume</p>
-          <h2>Working Experience</h2>
-        </header>
-        <div className="timeline">
-          <div
-            className="timeline-item left wow slideInLeft"
-            data-wow-delay="0.1s"
-          >
-            <div className="timeline-text">
-              <div className="timeline-date">2021 - date</div>
-              <h2>INSTRUCTOR</h2>
-              <h4>Nascomsoft embedded hub, Bauchi </h4>
-              <p>
-                Ismail is an instructor at Nascomsoft Embedded Hub, guiding
-                students in MATLAB simulation, C and C++ programming, embedded
-                systems, inverter construction, and solar system installation.
-                His focus is on building a solid understanding of programming
-                fundamentals, system components, and practical hands-on skills.
-                Through comprehensive instruction, he empowers students to work
-                effectively with microcontrollers, design systems, and implement
-                renewable energy solutions.
-              </p>
-            </div>
-          </div>
-          <div
-            className="timeline-item right wow slideInRight"
-            data-wow-delay="0.1s"
-          >
-            <div className="timeline-text">
-              <div className="timeline-date">2021-DATE</div>
-              <h2>ENGINEERING PROJECTS</h2>
-              <h4>Nascomsoft embedded hub, Bauchi </h4>
-              <p>
-                Ismail has worked on numerous engineering projects, including a
-                tomato sorting machine, visible light communication (VLC)
-                system, electricity meter with SMS alerts, mobility aids for the
-                visually impaired, and accident detection systems. He has
-                contributed to creating a hydroponic system, thermoelectric
-                energy generation, and an incubator with 95% hatching
-                efficiency. Additionally, he has implemented solar power
-                systems, car trackers, and display systems using P10 boards.
-                These projects highlight his expertise in embedded systems,
-                renewable energy, and automation, addressing various industrial
-                and societal challenges. Ismail's engineering projects also
-                include MATLAB-based work, such as the economic load dispatcher
-                and the modeling and simulation of a stepper motor. These
-                projects demonstrate his expertise in optimization techniques
-                and control system analysis.
-              </p>
-            </div>
-          </div>
+    <div className="experience-card bg-white shadow-lg rounded-lg p-6 md:flex md:items-start">
+      <div className="timeline-date mb-4 md:mb-0 md:mr-8 text-blue-600 font-semibold text-lg md:w-1/4">
+        {experience.date}
+      </div>
+      <div className="experience-details md:w-3/4">
+        <h3 className="text-xl font-bold text-gray-800 mb-2">
+          {experience.position}
+        </h3>
+        <p className="text-gray-700 leading-relaxed">
+          {experience.description}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const ExperienceSection = () => {
+  return (
+    <div className="experience bg-gray-50 py-12" id="experience">
+      <div className="container mx-auto px-4">
+        <div className="section-header text-center mb-12">
+          <p className="text-blue-600 font-semibold">{experience.subtitle}</p>
+          <h2 className="text-3xl font-bold">{experience.title}</h2>
+        </div>
+        <div className="experience-list space-y-8">
+          {experience.experiences.map((exp, index) => (
+            <ExperienceCard key={index} experience={exp} />
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Experience;
+export default ExperienceSection;
