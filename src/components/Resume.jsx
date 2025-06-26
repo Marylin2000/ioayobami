@@ -114,7 +114,7 @@ const ResumeSection = () => {
 
   const contactLinks = [
     {
-      name: "Download Full CV",
+      name: "View Full CV",
       url: "https://flowcv.com/resume/ih2kq6e7h6",
       icon: (
         <svg

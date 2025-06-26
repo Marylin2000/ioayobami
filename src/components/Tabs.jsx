@@ -31,7 +31,7 @@ const PortfolioTabs = () => {
   );
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12">
+    <div  id="portfolio" className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12">
       {/* Improved Tab Navigation */}
       <div className="mb-8 md:mb-12 relative">
         {/* Scrollable tab container for mobile */}

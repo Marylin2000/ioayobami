@@ -47,7 +47,7 @@ function Footer() {
             <FaWhatsapp size={28} />
           </a>
           <a
-            href="https://www.facebook.com/ismaeel.ayobami.14"
+            href="https://www.facebook.com/share/199syk2W6t/"
             className="text-white"
           >
             <FaFacebook size={28} />
@@ -59,13 +59,13 @@ function Footer() {
             <FaYoutube size={28} />
           </a>
           <a
-            href="https://instagram.com/hizmoney01?igshid=OGQ5ZDc2ODk2ZA=="
+            href="https://www.instagram.com/engrioayobami?igsh=cW4wZXVmYnpsdTJn"
             className="text-white"
           >
             <FaInstagram size={28} />
           </a>
           <a
-            href="https://www.linkedin.com/in/ayobami-ismail-b3815a245"
+            href="https://www.linkedin.com/in/engr-i-o-ayobami-b3815a245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="text-white"
           >
             <FaLinkedin size={28} />

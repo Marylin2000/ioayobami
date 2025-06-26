@@ -4,12 +4,10 @@ import { IoClose } from "react-icons/io5"; // Icon for close button
 
 const links = [
   { href: "/", text: "Home" },
-  { href: "#about", text: "About" },
-  { href: "#service", text: "Service" },
-  { href: "#experience", text: "Experience" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#review", text: "Review" },
-  { href: "#contact", text: "Contact" },
+  { href: "/#about", text: "About" },
+  { href: "/#service", text: "Service" },
+  { href: "/#portfolio", text: "Portfolio" },
+  { href: "/#contact", text: "Contact" },
   { href: "/blog", text: "Blog" },
 ];
 

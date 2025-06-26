@@ -20,7 +20,6 @@ const Home = () => {
       <Hero />
       <AboutSection />
       <ServicesSection />
-      <ExperienceSection />
       <div>
         <div className="flex items-center flex-col justify-center py-4">
           <div className="items-center flex gap-3">

@@ -22,7 +22,7 @@ const MatlabIcon = () => (
 const ServicesSection = () => {
   const services = [
     {
-      title: "MATLAB Instruction",
+      title: "MATLAB",
       icon: <MatlabIcon />,
       description: "Specialize in teaching MATLAB for engineering applications including system modeling, simulation, control systems, and data analysis.",
       highlights: [
@@ -35,10 +35,10 @@ const ServicesSection = () => {
     {
       title: "Embedded Systems",
       icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="#3B82F6"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6zm5 2H6v8h3V8zm5 0h-3v8h3V8z"/></svg>,
-      description: "Guide students in embedded systems development, microcontroller programming, and real-world project implementation.",
+      description: "Excels  in embedded systems development, microcontroller programming, and real-world project implementation.",
       highlights: [
         "Microcontroller programming",
-        "PCB design",
+        "Machine Learning",
         "Sensor integration",
         "Firmware development"
       ]
@@ -46,12 +46,13 @@ const ServicesSection = () => {
     {
       title: "Renewable Energy",
       icon: <svg viewBox="0 0 24 24" className="w-8 h-8" fill="#F59E0B"><path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/></svg>,
-      description: "Teach solar system design, energy harvesting techniques, and sustainable power solutions.",
+      description: "An expert solar system design, energy harvesting techniques, and sustainable power solutions.",
       highlights: [
         "Solar installation",
         "Inverter design",
         "Energy harvesting",
-        "Power electronics"
+        "Piezo-electricity",
+        "Thermo-electricity"
       ]
     }
   ];
@@ -69,7 +70,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+    <section id="service" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
