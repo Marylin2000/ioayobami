@@ -55,6 +55,19 @@
     link: "",
   },
   {
+    title: "IoT and AI based carbon emission forecasting system",
+    image:matlab2,
+    imageAlt: "Matlab image",
+    category: "MATLAB",
+    link: "",
+  },{
+    title: "Arduino,IoT and Mobile application based home automation",
+    image: matlab1,
+    imageAlt: "Image Matlab",
+    category: "MATLAB",
+    link: "",
+  },
+  {
     title: "SHOCK ABSORBER",
     image: programming5,
     imageAlt: "Shock Absorber Image",
